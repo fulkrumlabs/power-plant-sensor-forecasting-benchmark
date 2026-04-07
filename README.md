@@ -62,8 +62,22 @@ The charts in [`assets/`](./assets) are masked versions of the figures used in t
 
 ![Feature importance](./assets/feature-importance.png)
 
+## Start with the notebook
+
+The main entry point is:
+
+- [`notebooks/power_plant_sensor_forecasting_public.ipynb`](./notebooks/power_plant_sensor_forecasting_public.ipynb)
+
+It provides a clean workflow for:
+
+- setting the private CSV path and private column names at runtime
+- running the public-safe benchmark
+- loading the sanitized summary back into the notebook
+
 ## Repository contents
 
+- [`notebooks/power_plant_sensor_forecasting_public.ipynb`](./notebooks/power_plant_sensor_forecasting_public.ipynb)
+  Notebook-first workflow for the benchmark.
 - [`scripts/run_power_plant_forecasting.py`](./scripts/run_power_plant_forecasting.py)
   Public-safe evaluation runner. It accepts a private timestamp column and private target column at runtime so the raw schema does not need to live in this repo.
 - [`assets/`](./assets)
