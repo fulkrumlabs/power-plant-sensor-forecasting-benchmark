@@ -78,6 +78,8 @@ It provides a clean workflow for:
 
 - [`notebooks/power_plant_sensor_forecasting_public.ipynb`](./notebooks/power_plant_sensor_forecasting_public.ipynb)
   Notebook-first workflow for the benchmark.
+- [`data/public-summary.json`](./data/public-summary.json)
+  Sanitized benchmark summary used by the notebook.
 - [`scripts/run_power_plant_forecasting.py`](./scripts/run_power_plant_forecasting.py)
   Public-safe evaluation runner. It accepts a private timestamp column and private target column at runtime so the raw schema does not need to live in this repo.
 - [`assets/`](./assets)
